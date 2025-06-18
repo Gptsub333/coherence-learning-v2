@@ -9,7 +9,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import ScrollToTopButton from "@/components/scroll";
-import { CenteredToastProvider } from "@/components/ui/centered-toast-provider";
+import { ToastContainer } from "react-toastify";
 
 // Configure your chosen fonts
 const headingFont = Nunito_Sans({
@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
                 <Header />
                 <main className="min-h-screen">
                     {children}
-                    <CenteredToastProvider />
+                    <ToastContainer />
                 </main>
                 <Footer />
                 <ScrollToTopButton />
